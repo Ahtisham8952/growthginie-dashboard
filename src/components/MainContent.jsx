@@ -115,7 +115,7 @@ const MainContent = ({ activeTab }) => {
     return (
       <div className="flex-1 p-4 md:p-6 bg-[#ffffff]">
         <div className="border-b border-rgba(246, 247, 249, 1) mb-4 md:mb-6">
-          <div className="flex flex-wrap space-x-2 md:space-x-4">
+          <div className="flex  space-x-2 md:space-x-4">
             <button
               onClick={() => setActiveSubTab("drafts")}
               className={`px-2 py-1 md:px-4 md:py-2 ${
