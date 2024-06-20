@@ -26,31 +26,28 @@ const TopBar = ({ onOpen, activeTab }) => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
-      <div className='flex flex-col md:flex-row justify-between items-center w-full p-6'>
+      <div className='flex flex-col md:flex-row justify-between items-center w-full p-2 md:px-6'>
   <div className="mb-4 md:mb-0"> {/* mb-4 adds margin bottom */}
     <h1 className="text-3xl font-bold text-black">{title}</h1>
   </div>
-  <div className="flex flex-wrap items-center border-t border-b border-gray-300 bg-gray-200 px-4 py-2  w-[446px]">
+  <div className="flex flex-wrap items-center border-t border-b border-gray-300 bg-gray-200 px-4 py-2 w-full sm:w-[446px]">
   {/* Left Section with Icon and Text */}
-  <div className="flex items-center">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="size-5">
-  <path fillRule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z" clipRule="evenodd" />
-</svg>
-
-
-
-    <p className="ml-2 text-black">your free trial just end in 6 days</p>
+  <div className="flex items-center w-full sm:w-auto">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="size-5">
+      <path fillRule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z" clipRule="evenodd" />
+    </svg>
+    <p className="ml-2 text-black">Your free trial ends in 6 days</p>
   </div>
 
   {/* Right Section with Upgrade Button */}
-  <button className="flex items-center bg-black text-white px-4 py-2 ml-auto rounded-full">
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
-</svg>
-
+  <button className="flex items-center bg-black text-white px-4 py-2 m-auto rounded-full mt-2 sm:mt-0">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+      <path strokeLinecap="round" strokeLinejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+    </svg>
     Upgrade Now
   </button>
 </div>
+
 
 
 </div>
